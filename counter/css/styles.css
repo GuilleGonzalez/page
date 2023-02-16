@@ -1,0 +1,71 @@
+:root {
+	--defaultSize: max(calc(0.8vw + 0.8vh), 0.6rem);
+}
+
+.displayText{
+	font-size: calc(21 * var(--defaultSize));
+	transform: translateY(1.5vh);
+}
+
+p{
+	margin-top: 0.2rem;
+	font-size: calc(1.25 * var(--defaultSize));
+}
+
+/*My Standard Stuff Starts Here*/
+*{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+	-webkit-touch-callout: none; 
+    -webkit-user-select: none; 
+    -khtml-user-select: none; 
+    -moz-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none;
+}
+
+body{
+	margin: 0;
+	height: 100%;
+	color: white;
+	text-align: center;
+	background: linear-gradient(-45deg, #FF5F6D, #FFC371);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+}
+
+main{
+	width: 100%;
+	height: 96vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	animation: animationIn 3s;
+}
+
+@keyframes animationIn{
+	from{
+		opacity: 0;
+		transform: translateY(-3rem);
+	}
+	to{
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>Morse Code</title>
+		<meta name="author" content="Guillermo F. W. Gonzalez">
+		<meta name="description" content="A Morse Code Encoder & Decoder">
+
+		<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+		<link rel="apple-touch-icon" href="images/favicon.png" type="image/x-icon">
+		<link rel="icon" sizes="192x192" href="images/favicon.png" type="image/x-icon">
+		<link rel="stylesheet" href="css/styles.css" type="text/css">
+	</head>
+	<body>
+		<main>
+			<h1>Morse Code</h1>
+			<hr>
+			<textarea placeholder="Text to Translate..." id="inputTextArea" oninput="findCode(); autoGrow(this);" spellcheck=false></textarea>
+			<input type="radio" name="encode" id="encode" checked=true onclick="changeCodingType()"><label>Encode</label></input><input type="radio" name="encode" id="decode" onclick="changeCodingType()"><label>Decode</label></input>
+			<p id="outputText"></p>
+			<script type="text/javascript" src="scripts/script.js"></script>
+		</main>
+	</body>
+</html>

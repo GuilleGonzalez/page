@@ -1,0 +1,116 @@
+h1{
+	font-size: max(5vw, 3rem);
+	margin: 0;
+}
+
+p{
+	font-size: max(3vw, 1.5rem);
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+.small-p{
+	font-size: max(2vw, 1rem);
+}
+
+.subtitle{
+	font-size: max(2vw, 1rem);
+	margin: 0;
+}
+
+nav ul{
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: 10%;
+	margin-right: 10%;
+	align-items: center;
+	justify-content: center;
+	gap: max(1vw, 0.5rem);
+}
+
+nav ul li{
+	list-style: none;
+	margin: max(0.5vw, 0.25rem) 0;
+}
+
+nav ul li a{
+	font-size: max(1.4vw, 0.8rem);
+	font-weight: normal;
+	text-decoration: none;
+	color: white;
+	background-color: black;
+	padding: max(0.75vw, 0.5rem)  max(1.5vw, 1rem);
+	border-radius:  max(3vw, 2rem);
+}
+
+nav ul li a:hover{
+	flex: 1;
+	color: #ffffd9;
+	text-decoration: underline;
+}
+
+
+/*My Standard Stuff Starts Here*/
+a{
+	color: #ffffd9;
+}
+
+a:hover {
+  color: #ffff9f;
+  text-decoration: none;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+
+body{
+	margin: 0;
+	height: 100%;
+	color: white;
+	text-align: center;
+	background: linear-gradient(-45deg, #FF5F6D, #FFC371);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+}
+
+main{
+	animation: animationIn 2s;
+}
+
+hr{
+	border: 0;
+	clear: both;
+	display: block;
+	width: 100%;                
+	background-color:#FFFFFF;
+	height: 1px;
+}
+
+@keyframes animationIn{
+	from{
+		opacity: 0;
+		transform: translateY(-2rem);
+	}
+	to{
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
