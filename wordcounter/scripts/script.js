@@ -9,3 +9,4 @@ function findCount()
 }
 
 inputText.addEventListener('keyup', findCount);
+inputText.addEventListener('paste', findCount);
